@@ -15,6 +15,7 @@ from audio.AudioPlayer import *
 from Statistics.StatisticHandler import StatisticHandler
 
 from random import choice
+import webbrowser
 
 class MyWindow(QMainWindow, Ui_MainWindow):
     TEXT_BY_COLOR_THEMES = {
@@ -99,6 +100,7 @@ class MyWindow(QMainWindow, Ui_MainWindow):
         self.settings_menu.themeComboBox.activated.connect(self.on_theme_combobox_activated)
         self.settings_menu.resetSettingsButton.clicked.connect(self.on_reset_settings)
         self.settings_menu.resetStatisticsButton.clicked.connect(self.on_reset_statistics)
+        self.settings_menu.starButton.clicked.connect(self.on_github_star)
 
         # инициализация меню статистики
         self.mainBodyLayout.addWidget(self.statistics_menu)
@@ -376,6 +378,9 @@ class MyWindow(QMainWindow, Ui_MainWindow):
             self.total_games = 0
             self.best_score = 0
             self.statistics_changed.emit()
+
+    def on_github_star(self):
+        webbrowser.open("https://github.com/PavelPutin/BlitzSum", new=2)
 
     def get_icon(self, icon_name):
         icon = QtGui.QIcon()
