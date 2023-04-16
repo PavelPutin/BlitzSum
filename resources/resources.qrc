@@ -1,0 +1,63 @@
+<RCC>
+  <qresource prefix="vsu-theme">
+    <file>themes/vsu/entertainment-volume-high-vsu.png</file>
+    <file>themes/vsu/entertainment-volume-low-vsu.png</file>
+    <file>themes/vsu/entertainment-volume-off-vsu.png</file>
+    <file>themes/vsu/interface-arrows-left-vsu.png</file>
+    <file>themes/vsu/interface-award-crown-vsu.png</file>
+    <file>themes/vsu/interface-delete-vsu.png</file>
+    <file>themes/vsu/interface-help-question-circle-vsu.png</file>
+  </qresource>
+  <qresource prefix="rules-preview">
+    <file>rules-preview/CALCULATION_METHODS.png</file>
+    <file>rules-preview/ELECTRONICS.png</file>
+    <file>rules-preview/ENGLISH.jpg</file>
+    <file>rules-preview/HMI.png</file>
+    <file>rules-preview/LANGUAGES.png</file>
+    <file>rules-preview/MATEQ.png</file>
+    <file>rules-preview/PE.png</file>
+    <file>rules-preview/PHILOSOPHY.png</file>
+    <file>rules-preview/TIPIS.png</file>
+    <file>rules-preview/UNIX.png</file>
+    <file>rules-preview/XALYBA.png</file>
+  </qresource>
+  <qresource prefix="audio">
+    <file>audio/sfx_best_score_1.wav</file>
+    <file>audio/sfx_best_score_2.wav</file>
+    <file>audio/sfx_credit.wav</file>
+    <file>audio/sfx_credit_with_mark.wav</file>
+    <file>audio/sfx_deny_restart.ogg</file>
+    <file>audio/sfx_exam.wav</file>
+    <file>audio/sfx_exit_attention.ogg</file>
+    <file>audio/sfx_game_start.wav</file>
+    <file>audio/sfx_heterogenese.ogg</file>
+    <file>audio/sfx_normal_score.wav</file>
+    <file>audio/sfx_normal_select.wav</file>
+    <file>audio/sfx_sound_test_1.wav</file>
+    <file>audio/sfx_unavailable_selection.wav</file>
+    <file>audio/sfx_unselection.wav</file>
+    <file>audio/sfx_xalyba.ogg</file>
+  </qresource>
+  <qresource prefix="attestation-preview">
+    <file>attestation-preview/CALCULATION_METHODS.png</file>
+    <file>attestation-preview/ELECTRONICS.png</file>
+    <file>attestation-preview/ENGLISH.jpg</file>
+    <file>attestation-preview/HMI.png</file>
+    <file>attestation-preview/LANGUAGES.png</file>
+    <file>attestation-preview/MATEQ.png</file>
+    <file>attestation-preview/PE.png</file>
+    <file>attestation-preview/PHILOSOPHY.png</file>
+    <file>attestation-preview/TIPIS.png</file>
+    <file>attestation-preview/UNIX.png</file>
+    <file>attestation-preview/XALYBA.png</file>
+  </qresource>
+  <qresource prefix="csf-theme">
+    <file>themes/csf/entertainment-volume-high-csf.png</file>
+    <file>themes/csf/entertainment-volume-low-csf.png</file>
+    <file>themes/csf/interface-award-crown-csf.png</file>
+    <file>themes/csf/entertainment-volume-off-csf.png</file>
+    <file>themes/csf/interface-arrows-left-csf.png</file>
+    <file>themes/csf/interface-delete-csf.png</file>
+    <file>themes/csf/interface-help-question-circle-csf.png</file>
+  </qresource>
+</RCC>

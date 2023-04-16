@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameScreen</class>
+ <widget class="QWidget" name="GameScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>823</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_7">
+   <item alignment="Qt::AlignTop">
+    <widget class="QWidget" name="widget_6" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item alignment="Qt::AlignLeft">
+       <widget class="QPushButton" name="returnBackButton">
+        <property name="toolTip">
+         <string>Вернуться в главное меню (игра не сохранится!)</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="../resources/resources.qrc">
+          <normaloff>:/vsu-theme/themes/vsu/interface-arrows-left-vsu.png</normaloff>:/vsu-theme/themes/vsu/interface-arrows-left-vsu.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_4" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>1</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>1</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QWidget" name="GameFieldWidget" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>1</verstretch>
+            </sizepolicy>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <layout class="QGridLayout" name="gridLayout" rowstretch="0" columnstretch="0">
+              <property name="sizeConstraint">
+               <enum>QLayout::SetNoConstraint</enum>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignBottom">
+          <widget class="QWidget" name="widget_7" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QProgressBar" name="timeLeftProgressBar">
+              <property name="value">
+               <number>24</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="daysLeftLabel">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item alignment="Qt::AlignTop">
+          <widget class="QWidget" name="widget_3" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="currentScoreLabel">
+              <property name="text">
+               <string>Текущий счёт: 0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="bestScoreLabel">
+              <property name="text">
+               <string>Лучший счёт: 0</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignBottom">
+          <widget class="QWidget" name="widget_5" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item alignment="Qt::AlignBottom">
+             <widget class="QPushButton" name="rulesButton">
+              <property name="toolTip">
+               <string>Открыть страницу правил (игра приостановится)</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset resource="../resources/resources.qrc">
+                <normaloff>:/vsu-theme/themes/vsu/interface-help-question-circle-vsu.png</normaloff>:/vsu-theme/themes/vsu/interface-help-question-circle-vsu.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>Ctrl+R</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resources/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
