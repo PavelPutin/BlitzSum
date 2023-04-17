@@ -19,7 +19,7 @@ from gameLogic.Subject import Subject
 
 
 class BlitzSum:
-    DAYS_LEFT = 10#138 # дней в 4 семестре
+    DAYS_LEFT = 138 # дней в 4 семестре
     TARGET_MARK = 100
 
     def __init__(self):

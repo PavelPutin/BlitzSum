@@ -15,6 +15,6 @@ class StatisticHandler:
         with open(StatisticHandler.FILE, "w") as stream:
             data = {
                 "total_games": total_games,
-                "best_score": best_score
+                "best_score": int(best_score)
             }
             yaml.safe_dump(data, stream)

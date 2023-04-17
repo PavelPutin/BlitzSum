@@ -48,10 +48,11 @@ class MyWindow(QMainWindow, Ui_MainWindow):
         self.theme = "vsu"
 
         statistics_data = StatisticHandler.get_data()
-        self.total_games = statistics_data["total_games"]
-        self.best_score = statistics_data["best_score"]
+        self.total_games = int(statistics_data["total_games"])
+        self.best_score = int(statistics_data["best_score"])
 
         self.audio_player = Player()
+        self.saved_volume = self.audio_player.volume
 
         self.init_component()
         self.show()
@@ -155,6 +156,8 @@ class MyWindow(QMainWindow, Ui_MainWindow):
         self.main_menu.hide()
         self.game_screen.show()
         self.game = BlitzSum()
+
+        self.update_current_score_label()
 
         self.attestations_tiles = [[AttestationTile() for i in range(Field.DEFAULT_SIZE)] for row in range(Field.DEFAULT_SIZE)]
         for ri, row in enumerate(self.attestations_tiles):
@@ -348,7 +351,11 @@ class MyWindow(QMainWindow, Ui_MainWindow):
         self.update_volume_button()
 
     def mute(self):
-        self.settings_menu.horizontalSlider.setValue(0)
+        if self.settings_menu.horizontalSlider.value() == 0:
+            self.settings_menu.horizontalSlider.setValue(self.saved_volume)
+        else:
+            self.saved_volume = self.settings_menu.horizontalSlider.value()
+            self.settings_menu.horizontalSlider.setValue(0)
 
     def update_volume_button(self):
         volume = self.settings_menu.horizontalSlider.value()
